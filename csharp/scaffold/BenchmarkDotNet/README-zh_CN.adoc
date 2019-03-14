@@ -1,0 +1,53 @@
+link:README.adoc[English (United States)]|中文
+
+= BenchmarkDotNet 脚手架 =
+
+官网: https://benchmarkdotnet.org
+
+= 怎么用 =
+
+== Docker ==
+=== Linux/macOS ===
+[source,shell]
+----
+chmod +x ./benchmark-docker.sh
+
+./benchmark-docker.sh
+----
+
+=== Windows ===
+[source,shell]
+----
+.\benchmark-docker.bat
+----
+
+== 本地 ==
+=== Linux/macOS ===
+安装.NET Core 全局工具
+
+https://docs.microsoft.com/zh-cn/dotnet/core/tools/global-tools
+[source,shell]
+----
+dotnet tool install -g BenchmarkDotNet.Tool
+----
+运行
+[source,shell]
+----
+chmod +x ./benchmark.sh
+
+./benchmark.sh
+----
+
+=== Windows ===
+安装.NET Core 全局工具
+
+https://docs.microsoft.com/zh-cn/dotnet/core/tools/global-tools
+[source,shell]
+----
+dotnet tool install -g BenchmarkDotNet.Tool
+----
+运行
+[source,shell]
+----
+.\benchmark.bat
+----

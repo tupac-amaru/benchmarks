@@ -1,0 +1,53 @@
+English (United States)|link:README-zh_CN.adoc[中文]
+
+= BenchmarkDotNet Scaffold =
+
+Official: https://benchmarkdotnet.org
+
+= Usage =
+
+== Docker ==
+=== Linux/macOS ===
+[source,shell]
+----
+chmod +x ./benchmark-docker.sh
+
+./benchmark-docker.sh
+----
+
+=== Windows ===
+[source,shell]
+----
+.\benchmark-docker.bat
+----
+
+== Local ==
+=== Linux/macOS ===
+install .NET Core Global Tools 
+
+https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools
+[source,shell]
+----
+dotnet tool install -g BenchmarkDotNet.Tool
+----
+Run
+[source,shell]
+----
+chmod +x ./benchmark.sh
+
+./benchmark.sh
+----
+
+=== Windows ===
+install .NET Core Global Tools 
+
+https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools
+[source,shell]
+----
+dotnet tool install -g BenchmarkDotNet.Tool
+----
+Run
+[source,shell]
+----
+.\benchmark.bat
+----

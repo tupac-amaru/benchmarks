@@ -1,0 +1,51 @@
+English (United States)|link:README-zh_CN.adoc[中文]
+
+= Benchmarks =
+
+wikipedia: https://en.wikipedia.org/wiki/Benchmark_(computing)
+
+====
+In some restricted scenarios, better-performing components, libraries, frameworks, and services can often save more resources.
+How to evaluate the performance of a component, library, framework, and service, the best way is to write code to evaluate
+The meaning of this code base is to collect various types of benchmark code for components, libraries, frameworks, and services.
+====
+
+= structure =
+
+[source,shell]
+----
+benchmarks
+├── language
+│    ├── component
+│    │   ├── component-name
+│    │   │   ├── purpose
+│    │   │   │   ├── test code
+│    │   │   │   └── README
+│    │   └── Others  
+│    ├── library
+│    │   ├── library-name
+│    │   │   ├── version
+│    │   │   │   ├── test code
+│    │   │   │   └── README
+│    │   └── Others 
+│    ├── framework
+│    │   ├── version
+│    │   │   ├── purpose
+│    │   │   │   ├── test code
+│    │   │   │   └── README
+│    │   └── Others 
+│    ├── service
+│    │   ├── version
+│    │   │   ├── purpose
+│    │   │   │   ├── test code
+│    │   │   │   └── README
+│    │   └── Others 
+│    └── scaffold
+│        ├── BenchmarkDotNet
+│        │    ├── codes
+│        │    ├── benchmark script
+│        │    └── README
+│        └── Others
+└─── Others
+----
+ 

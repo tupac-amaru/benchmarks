@@ -1,0 +1,51 @@
+link:README.adoc[English (United States)]|中文
+
+= Benchmarks =
+
+维基百科: https://en.wikipedia.org/wiki/Benchmark_(computing)
+
+====
+在一些受限场景下,性能更好的组件,库,框架以及服务往往能为节省更多的资源
+如何评估一个组件,库,框架以及服务的性能, 最佳的做法就是写代码来评估
+这个代码库的意义就是用来收集各类的对组件,库,框架以及服务的基准测试代码
+====
+
+= 结构 =
+
+[source,shell]
+----
+benchmarks
+├── language
+│    ├── component
+│    │   ├── component-name
+│    │   │   ├── purpose
+│    │   │   │   ├── test code
+│    │   │   │   └── README
+│    │   └── Others  
+│    ├── library
+│    │   ├── library-name
+│    │   │   ├── version
+│    │   │   │   ├── test code
+│    │   │   │   └── README
+│    │   └── Others 
+│    ├── framework
+│    │   ├── version
+│    │   │   ├── purpose
+│    │   │   │   ├── test code
+│    │   │   │   └── README
+│    │   └── Others 
+│    ├── service
+│    │   ├── version
+│    │   │   ├── purpose
+│    │   │   │   ├── test code
+│    │   │   │   └── README
+│    │   └── Others 
+│    └── scaffold
+│        ├── BenchmarkDotNet
+│        │    ├── codes
+│        │    ├── benchmark script
+│        │    └── README
+│        └── Others
+└─── Others
+----
+ 
